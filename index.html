@@ -9,8 +9,9 @@
         <title>Censor Yourself</title>
         <meta name="Censor Yourself Web App" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--replace with proper CSS path-->
-         <link rel="stylesheet" media="all" href="http://dtimf8nmubu8v.cloudfront.net/assets/application-51ce30210dc9d9003329c4fa6bb9b19da27718ac73ea1362b57ea7e4f4b3a7f6.css" data-turbolinks-track="true" />
+        <link rel="stylesheet" media="all" href="http://dtimf8nmubu8v.cloudfront.net/assets/application-51ce30210dc9d9003329c4fa6bb9b19da27718ac73ea1362b57ea7e4f4b3a7f6.css" data-turbolinks-track="true" />
+        <script src="http://fast.fonts.net/jsapi/361fccad-c284-40cb-bb69-badbbe3b5c9a.js" data-turbolinks-track="true"></script>
+        <script src="http://dtimf8nmubu8v.cloudfront.net/assets/application-b56f3969093b37cdf718d9abd174eb2853f26950c5ba155ee43b2f0d701257dc.js" data-turbolinks-track="true"></script>
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     </head>
     <body>
@@ -28,14 +29,18 @@
         </div>
 
         <input type="text" id="imageURL">
-        <button id="urlSubmit">Submit URL</button>
+        <a class="button bg-green large expanded"><button id="urlSubmit">Submit URL</button></a>
         OR
-        Upload Image <input type="file" id="fileupload" name="fileupload">
+        <center><input type="file" id="fileupload" name="fileupload"></center>
+        <a class="button bg-green large expanded" href="xxxxxxxx">Upload Image</a>
+
         <!--we draw it here and then output the png to the output div-->
         <canvas id="maincanvas" width="800" height="800"></canvas>
         <div id="output"></div>
         <br><br>
+        <a class="button bg-blue large expanded">
         <button id="dlImage">Download Result</button>
+        </a>
         </center>
         </div>
 
