@@ -43,6 +43,7 @@ imageLoader.addEventListener('change', handleImage, false);
 
 
 $("#urlSubmit").on("click", function(){
+    event.preventDefault();
 
 var img = new Image();
 img.onload = function() {
