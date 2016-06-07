@@ -2,77 +2,72 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Censor Yourself</title>
-        <meta name="Censor Yourself Web App" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" media="all" href="http://dtimf8nmubu8v.cloudfront.net/assets/application-51ce30210dc9d9003329c4fa6bb9b19da27718ac73ea1362b57ea7e4f4b3a7f6.css" data-turbolinks-track="true" />
-       <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    </head>
-    <body>
-        <!--[if lt IE 7]>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Censor Yourself</title>
+    <meta name="Censor Yourself Web App" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="all" href="http://dtimf8nmubu8v.cloudfront.net/assets/application-51ce30210dc9d9003329c4fa6bb9b19da27718ac73ea1362b57ea7e4f4b3a7f6.css" data-turbolinks-track="true" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+</head>
+
+<body>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <div class="wrapper">
-		<!--upload stuff -->
-
+    <div class="wrapper">
+        <!--upload stuff -->
         <div class="column row text-center">
-        <div class="medium-8 columns text-center">
-        <h2 class="text-blue subhead">Censor Yourself</h2>
-        <p>Here is some copy about what you can do on this page.</p>
-        
-        <table>
-        <tr>
-        <td>
-        <input type="text" id="imageURL">
-<<<<<<< HEAD
-        </td>
-        <td>
-        <a class="button bg-green large expanded"><button id="urlSubmit">Submit URL</button></a>
-        </td></tr>
-        </table>
-=======
-        <a class="button bg-green large expanded" id="urlSubmit"><button>Submit URL</button></a>
->>>>>>> origin/master
-        OR
-       
-        <input type="file" id="fileupload" name="fileupload">
-<<<<<<< HEAD
-        <a class="button bg-green large expanded" href="xxxxxxxx">Upload Image</a>
-   
-=======
->>>>>>> origin/master
+            <div class="medium-8 columns text-center">
+                <h2 class="text-blue subhead">Censor Yourself</h2>
+                <p>Here is some copy about what you can do on this page.</p>
+                <table>
+                    <tr>
+                        <td>
+                            Image Type:&nbsp;
+                            <form id="otype" style="display:inline">
+                                <input type="radio" name="type" value="cc" checked> Content Censored
+                                <input type="radio" name="type" value="ga"> Global Ally
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Instagram URL
+                            <input type="text" id="imageURL">
+                        </td>
+                        <td>
 
-        <!--we draw it here and then output the png to the output div-->
-        <canvas id="maincanvas" width="800" height="800"></canvas>
-        <div id="output"></div>
-<<<<<<< Updated upstream
-        <br><br>
-        <a class="button bg-blue large expanded" d="dlImage">
-        <button id="dlImage">Download Result</button>
-        </a>
-=======
->>>>>>> Stashed changes
+                            <a id="urlSubmit" class="button bg-green large expanded">
+                                <div>Submit URL</div>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                OR<br>
+                Upload Image
+                <input type="file" id="fileupload" name="fileupload" class="button bg-green large expanded">
+                <!--we draw it here and then output the png to the output div-->
+                <canvas id="maincanvas" width="800" height="800" style="display:none"></canvas>
+                <!-- javascript appends an image to this div as the output. you can style the image to be smaller based on the display it's native resolution is 800x800 -->
+                <div id="output"></div>
+                <br>
+                <br>
+                <!--will hide this before the result appears, I'll leave it displayed for now so you can style it -->
+                <a class="button bg-blue large expanded" id="dlImage">
+                    <button>Download Result</button>
+                </a>
+            </div>
         </div>
-        </div>
-        </div>
+    </div>
+    <!--site scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/site.js"></script>
+</body>
 
-
-
-
-
-
-
-
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-
-        <script src="js/site.js"></script>
-
-
-    </body>
 </html>

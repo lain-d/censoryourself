@@ -51,9 +51,8 @@ img.onload = function() {
  //   img2.setAttribute('crossOrigin', 'anonymous');
     img2.src = "images/GlobalAlly.jpg";
 };
+img.setAttribute('crossOrigin', 'anonymous');
 img.src = $("#imageURL").val();
-img.setAttribute('crossorigin', 'anonymous');
-
 });
 
 
