@@ -59,7 +59,7 @@ display: none;
 
 .overlayslect
 {
-	Border-collapse:separate;
+	border-collapse:separate;
 	width:75%;
 	margin:auto;
 	margin-bottom:50px;
