@@ -2,80 +2,82 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Censor Yourself</title>
-        <meta name="Censor Yourself Web App" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" media="all" href="css/page.css" data-turbolinks-track="true" />
-        <!--
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Censor Yourself</title>
+    <meta name="Censor Yourself Web App" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="all" href="css/page.css" data-turbolinks-track="true" />
+    <!--
         <script src="http://fast.fonts.net/jsapi/361fccad-c284-40cb-bb69-badbbe3b5c9a.js" data-turbolinks-track="true"></script>
         <script src="http://dtimf8nmubu8v.cloudfront.net/assets/application-b56f3969093b37cdf718d9abd174eb2853f26950c5ba155ee43b2f0d701257dc.js" data-turbolinks-track="true"></script> -->
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        </head>
-        <body>
-        <!--[if lt IE 7]>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+</head>
+
+<body>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-  
-        <!--upload stuff -->
-        
-        <div class="medium-8 medium-centered text-center" style="float:none">
+
+    <!--upload stuff -->
+
+    <div class="medium-8 medium-centered text-center" style="float:none">
         <h2 class="text-blue subhead">Censor Yourself</h2>
         <div class="row text-center">
-        <div class="medium-8 medium-centered text-center" style="float:none">
-        <p>Censor yourself and become an ally by pasting an image URL from the web below or uploading an image from your computer.
-        <br>
-        Then download your image to share on social media with #GlobalAlly.</p>
-        <p>
-        <table style= "Border-collapse:separate">
-        <tr><td>
-        Message:</td><td>
-        <form id="otype" style="display:inline">
-                                <input type="radio" name="type" value="cc" checked>&nbsp;&nbsp;<img src="images/ccsm.jpg" alt="Content Censored"><br><br>
+            <div class="medium-8 medium-centered text-center" style="float:none">
+                <p>Censor yourself and become an ally by pasting an image URL from the web below or uploading an image from your computer.
+                    <br> Then download your image to share on social media with #GlobalAlly.</p>
+
+                <table style="Border-collapse:separate">
+                    <tr>
+                        <td>
+                            Message:</td>
+                        <td>
+                            <form id="otype" style="display:inline">
+                                <input type="radio" name="type" value="cc" checked>&nbsp;&nbsp;<img src="images/ccsm.jpg" alt="Content Censored">
+                                <br>
+                                <br>
                                 <input type="radio" name="type" value="ga">&nbsp;&nbsp;<img src="images/gasm.jpg" alt="#GlobalAlly">
-                         </td></tr></form>
-                            </p>
-        </div>
-        </div>
-        </div>
+                        </td>
+                    </tr>    </table>
+                    </form>
+            
 
-        <p>
-        <div class="row text-center">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row text-center">
         <div class="medium-4 medium-centered text-center" style="float:none">
-        <table style= "Border-collapse:separate">
-        <tr><td>
-        <label for="fileupload">
-        <a class="button bg-green large expanded" >
-        <input type="file" name="fileupload" id="fileupload" class="inputfile" accept="image/*" />
-        Upload a Photo</a></label>
-      
-        </td></tr></table>
-        </div>
-        </div>
-        <p>
-        <!---if upload error, message will appear below-->
+            <label for="fileupload">
+                <a class="button bg-green expanded">
+                    <input type="file" name="fileupload" id="fileupload" class="inputfile" accept="image/*" /> Upload a Photo</a>
+            </label>
 
 
+ 
         <!--we draw it here and then output the png to the output div-->
-        <canvas class="renderCanvas" id="maincanvas" width="800" height="800"></canvas>
         <div class="imgOutput" id="output"></div>
-        <br><br>
-        <table style= "Border-collapse:separate">
-        <tr><td>
-        <a id="dlImage" class="button bg-green large expanded dlbutton">
-        <button>Download</button>
+        <a id="dlImage" class="button bg-green expanded dlbutton">
+            <button>Download</button>
         </a>
-        </td></tr>
-        </table>
-        </div>
-       
+        <br>
+       </div>
+    </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-        <script src="js/site.js"></script>
 
-    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/site.js"></script>
+
+    <canvas class="renderCanvas" id="maincanvas" width="800" height="800"></canvas>
+</body>
+
 </html>
