@@ -29,10 +29,10 @@ function handleImage(e) {
 
 //Page Load
 $(document).ready(function() {
-
+  
     c = document.getElementById("maincanvas");
     ctx = c.getContext("2d");
-
+    var img2 = new Image();
     img2.onload = function() {
         ctx.drawImage(img2, 0, 250);
         $("#output").empty();
