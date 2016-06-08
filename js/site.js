@@ -55,8 +55,8 @@ if(imgloaded === true)
         ctx.drawImage(img2, 0, 250);
         $("#output").empty();
         $("#output").append('<img src="' + c.toDataURL() + '">');
-        $("#output").fadeIn("fast");
-        $("#dlImage").fadeIn("fast");
+        $("#output").fadeIn("fast").css("display","inline-block");
+        $("#dlImage").fadeIn("fast").css("display","inline-block");
 
     };
     var imageLoader = document.getElementById('fileupload');
