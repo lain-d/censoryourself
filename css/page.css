@@ -56,3 +56,12 @@ display: none;
 {
 	display:none;
 }
+
+.overlayslect
+{
+	Border-collapse:separate;
+	width:75%;
+	margin:auto;
+	margin-bottom:50px;
+
+}
