@@ -5,7 +5,7 @@ var c;
 var ctx;
 var overlay = new Array("images/ContentCensored.jpg", "images/GlobalAlly.jpg");
 var img2 = new Image();
-
+var img = new Image();
 
 
 function isUrlValid(url) {
@@ -19,13 +19,12 @@ function downloadCanvas(link, canvasId, filename) {
 function handleImage(e) {
     var reader = new FileReader();
     reader.onload = function(event) {
-        var img = new Image();
+    
         img.setAttribute('crossOrigin', 'anonymous');
-        $(img).error(function() { console.log("Sorry, the URL provided doesn't work"); });
+        $(img).error(function() { console.log("Sorry, image provided doesn't work"); });
         img.onload = function() {
             ctx.clearRect(0, 0, c.width, c.height);
             ctx.drawImage(img, 0, 0, 800, 800);
-
             img2.src = overlay[$("#otype").find('input').index($("#otype").find(':checked'))];
         };
          img.src = event.target.result;
@@ -50,33 +49,6 @@ $(document).ready(function() {
     var imageLoader = document.getElementById('fileupload');
     imageLoader.addEventListener('change', handleImage, false);
     
-    $("#urlSubmit").on("click", function() {
-        event.preventDefault();
-
-        if(!$("#imageURL").val())
-        {
-         $("#urlError").text("Please Enter a image URL");
-            $("#urlError").fadeIn("fast");
-            return;
-        }
-        else if(!isUrlValid($("#imageURL").val()))
-        {
-            $("#urlError").text("invalid URL");
-            $("#urlError").fadeIn("fast");
-            return;
-        }
-
-        var img = new Image();
-        img.setAttribute('crossOrigin', 'anonymous');
-        $(img).error(function() { $("#urlError").text("Sorry, the URL doesn't work");
-            $("#urlError").fadeIn("fast"); });
-        img.onload = function() {
-            ctx.clearRect(0, 0, c.width, c.height);
-            ctx.drawImage(img, 0, 0, 800, 800);
-            img2.src = overlay[$("#otype").find('input').index($("#otype").find(':checked'))];
-        };
-        img.src = $("#imageURL").val();
-    });
 
     $("#dlImage").on("click", function() {
         console.log("go");
