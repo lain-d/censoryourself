@@ -29,15 +29,28 @@
         <p>Censor yourself and become an ally by pasting an image URL from the web below or uploading an image from your computer.
         <br>
         Then download your image to share on social media with #GlobalAlly.</p>
-        <br>
+        <p>
+        <table style= "Border-collapse:separate">
+        <tr><td>
+        Image type:
+        </td>
+        <td>
+        <form id="otype" style="display:inline">
+                                <input type="radio" name="type" value="cc" checked> Content Censored
+                                </td>
+                                <td>
+                                <input type="radio" name="type" value="ga"> Global Ally
+                            </form>
+                            </td></tr></form>
+                            </p>
         </div>
         </div>
         </div>
         </div>
         <div class="medium-8 medium-centered text-center" style="float:none">
-        <table style= "Border-collapse:separate" max-width="100px" >
+        <table style= "Border-collapse:separate">
         <tr><td>
-        <input type="text" id="imageURL" placeholder="paste URL here" >
+        <input type="text" id="imageURL" placeholder="paste URL here">
         </td>
         <td>
         <a class="button bg-green large expanded"><button id="urlSubmit">Submit URL</button></a>
