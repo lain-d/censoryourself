@@ -17,7 +17,7 @@ table {
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;
-	z-index: -1;
+	z-index: 0;
 }
 .inputfile + label {
     font-size: 25px;
@@ -27,4 +27,31 @@ table {
 
 .inputfile:focus + label{
 	
+}
+
+.renderCanvas {
+	display:none;
+}
+
+.imgOutput
+{
+	height:400px;
+	display:none;
+}
+
+.imgOutput img {
+	width:400px;
+}
+
+.errormsg{
+	font-size:15px;
+margin-top:-10px;
+color:#FF7F7F;
+text-align: left;
+height:20px;
+display: none;
+}
+.dlbutton
+{
+	display:none;
 }
