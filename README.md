@@ -1,4 +1,6 @@
-# Censor Yourself Webtool
+# Censor Yourself Webtool BASE64 BRANCH
+
+THIS VERSION IS CHANGED TO LOAD THE OVERLAY IMAGES IN CODE TO FIX CROSS ORIGIN ERRORS. IT MAKES THE CODE LARGER.
 
  GlobalAlly.org Censor Yourself Tool
 
